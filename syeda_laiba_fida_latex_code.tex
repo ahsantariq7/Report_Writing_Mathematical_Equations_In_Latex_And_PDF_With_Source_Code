@@ -1,0 +1,388 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{tgpagella, newpxmath} % A successor to mathpazo
+\usepackage{yfonts} % For gothic
+
+\DeclareTextFontCommand{\textgoth}{\gothfamily}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\bfseries\Large\gothfamily The Islamia University Of Bahawalpur}\\ \hfill \break
+    {\Large\bfseries\scshape Department of Computer Science}\\\\
+    \begin{figure}[htp]
+    \centering
+    \includegraphics[width=4cm]{iub.PNG}
+    \label{fig:iub}
+\end{figure}
+    {\bfseries\Large SOFTWARE REQUIREMENTS SPECIFICATION}\\\hfill \break
+    \textbf{(SRS DOCUMENT)}\\\hfill \break
+    
+    {\bfseries\Large For}\\ \hfill \break
+    {\Large\bfseries\scshape Hospital Management System}\\ \hfill \break
+    \textbf{Version 1.0}\\ \hfill \break
+    {\bfseries\Large By}\\ \hfill \break
+    {\bfseries\Large Syeda Laiba Fida}\\ \hfill \break
+    {\bfseries\Large F21BDOCS1M08041}\\ \hfill \break
+    {\bfseries Session Spring/Fall 2019 – 2023}\\ \hfill \break
+    {\bfseries\Large Supervisor}\\ \hfill \break
+    {\bfseries\Large MAM TAIBA RASHEED}\\ \hfill \break
+    {\Large\bfseries\scshape Bachelor of Science in Computer Science }\\
+  
+  \end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\\
+\textbf{Revision History}\\ \hfill \break
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\raggedright\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X |}
+ \hline
+ Name & Date & Reason for changes & Version \\
+ \hline
+   &   &   &   &  \\
+\hline
+  &   &   &   &  \\
+\hline
+\end{tabularx}
+\newpage
+\textbf{Application Evaluation History}\\ \hfill \break
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\raggedright\arraybackslash}X  
+  | >{\raggedleft\arraybackslash}X |}
+ \hline
+ Comments (by committee)
+*include the ones given at scope time both in doc and presentation
+ & Action Taken  \\
+ \hline
+   &   &    \\
+\hline
+  &   &     \\
+\hline
+\end{tabularx}
+\\ \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break
+\\
+{\bfseries\Large Supervised By:}\\ \hfill \break
+    {\bfseries\Large Mam Taiba Rasheed}\\ \hfill \break \hfill \break \hfill \break \hfill \break
+    {Signature:\underline ..........................}
+    
+\newpage
+\section{Introduction}
+Human life is very valuable and consists of very complex structures and millions of functions. The medical department should provide the public with the best medical facilities. However, as Pakistan is a developing country in the health science sector and has developed many hospitals, the complex has many problems. The basic operations of various hospitals in Pakistan are still paper-based compared to European hospitals. This is because computers support hospital staff and their operations.\\
+The concept of automating hospital administration and administration is now set to be implemented in Pakistan. Our project is based on the above concept. H. Automation of hospital administration and administration. Hospital Management Systems (HMS) offer the benefits of streamlined operations, improved administration and control, superior patient care, pharmacies, medical labs, and tight cost controls. Powerful, flexible and easy to use, HMS is designed to bring real benefits to hospital management.
+\newpage
+\subsection{Proposed System}
+1.	Employee Details: The new proposed system stores and maintains all the employees’ details.
+\\\\
+2.	Registers: There is no need of keeping and maintaining records and employee register manually. It remembers each and every record and we can get any report related to employee and salary at any time.\\\\
+3.	Speed: The new proposed system is very fast and saves time.
+\\\\
+4.	Efficiency: The new proposed systems complete the work of many employees in less time.
+\\\\
+5.	Treatment details: The new proposed system contains the details of every past doctor and patients for future assistance.
+\\\\
+6.	Reduces redundancy: The most important benefit of this system is that it reduces the redundancy of data within the data.
+\\\\
+7.	Work load: Reduces the workload of the data store by helping in easy updates of the products and providing them with the necessary details together with financial transactions management.
+\\\\
+8.	Easy statements: Month-end and day-end statement easily taken out without getting headaches on browsing through the day end statements.
+\\\\
+\newpage
+\subsection{Project Goals}
+Hospitals need to track day-to-day activities and records of patients, doctors, nurses, ward boys, and other staff to keep the hospital running smoothly and normally. But keeping track of all activities and their records on paper can be very difficult and error prone. It is also a very inefficient and time consuming process given the continuously increasing number of people and hospital visits. Collecting and maintaining all these records is highly unreliable, inefficient and error prone.\\\\
+Also, keeping these records on paper is not economically or technically viable. Therefore, the functionality of the manual system is the cornerstone of our project. Develop an automated version of the manual system called "HMS". The main goal of our project is to make hospitals up to 90% paperless. It also aims to provide cost-effective and reliable automation of existing systems.
+\newpage
+\subsection{Objectives}
+Hospitals are an integral part of our lives, providing the best medical facilities for people suffering from a variety of ailments caused by changing climatic conditions, increased workload, traumatic stress, etc. Hospitals need to track day-to-day activities and records of patients, doctors, nurses, ward boys, and other staff to ensure smooth and successful hospital operations.\\\\
+But keeping track of all activities and their records on paper can be very tedious and error prone. It is also a very inefficient and time consuming process given the continuously increasing number of people and hospital visits. Recording and maintaining all these records is highly unreliable, inefficient and error prone. Also, keeping these records on paper is not economically or technically viable. Therefore, the functionality of the manual system is the cornerstone of our project. We have developed a "medical facility management support system" that automates the manual system.\\\\
+The main goal of our project is to provide up to 90\% paperless hospitals. It also aims to provide cost-effective and reliable automation of existing systems. The system also provides robust and reliable storage and backup while providing superior data security at every level of user-system interaction.\\
+Facility.
+The purpose of this study is to be fully relevant to hospital management systems.\\\\
+• This software is used to automate hospital management systems.\\
+• Manage two user levels.\\\\
+(i)	 Administrator Level\\
+(ii)	User Level\\\\
+
+Software includes:\\\\
+(i)	Maintaining patient data\\
+(ii)	Provides recipes, precautions and nutritional advice.\\
+(iii)	Provision and maintenance of all types of tests for patients.
+\newpage
+\subsection{Problem Statement }
+I decided to take on this project because hospitals are connected to the lives and daily lives of ordinary people.\\
+Manually processing data sets is time consuming and error prone. The purpose of this project is to automate or bring online the processes of daily activities such as room activities, new patient admissions, patient discharges, doctor assignments and final bill calculations. We've done our best to make the complex process of a hospital management system as easy as possible using structured modular technology and a menu-oriented interface. I have tried to design the software in such a way that users have no problems using this package and can extend it further. While this work cannot be said to be exhaustive, the main purpose of my exercise is to carry out the activities of each hospital in a computerized way rather than in a time-consuming manual manner.\\
+We believe that this software package is easy for non-programmers to use and eliminates the risk of human error. 
+\newpage
+\subsection{Scope}
+The proposed software product is a hospital management system "HMS". This system is used in all hospitals, clinics, pharmacies or pathology laboratories. A clinic, pharmacy, or pathology obtains information from a patient and stores this data for future use. Our current system is a paper-based system. Too late to provide an updated patient list within a reasonable timeframe. The purpose of this system is to reduce overtime pay and increase the number of patients that can be treated accurately. The requirement statements in these documents are both working and non-working.
+\newpage
+\section{Project Management}
+\subsection{Project planning and scheduling}
+Project planning is a part of project management and refers to using timelines such as Gantt charts to plan and then report on progress within a project environment. First, the scope of the project is defined and the appropriate method for completing the project is determined. After this step, the duration of the various tasks required to complete the work will be listed and grouped into a work breakdown structure. Logical dependencies between tasks are defined using activity network diagrams that allow the identification of critical paths. 
+\newpage
+\subsubsection{Methodology}
+The project was developed using an iterative and incremental development model (IID). This development approach is also known as the iterative waterfall development approach. Iterative and incremental development is a software development process developed in response to the more traditional waterfall model. This model was developed to handle such large projects. Large and complex projects require better development and testing methods than anything else. The waterfall model is known for its iterative testing process. Therefore, I choose the waterfall model for software development.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{waterfall_model.png}
+    \caption{waterfallmodel}
+    \label{fig:waterfallmodel}
+\end{figure}
+\\\\\\\
+\textbf{Advantages of the waterfall model:}
+
+o Simple, easy to understand, and easy to use. \\
+○The model is highly rigid and easy to handle. \\
+o Phases are processed and completed separately. \\
+o Suitable for small projects where the requirements are well understood.\\
+
+\newpage
+\subsubsection{Project Management Life Cycle}
+The project management life cycle consists of four phases. Describes each phase of the project lifecycle and the tasks required to complete it.\\\\
+The four phases is : 
+\\\\
+1. Introduction\\
+2. Make a plan\\
+3. Execution\\
+4. Closing. \\
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{Screenshot 2022-12-04 114133.png}
+    \caption{Iterative and Incremental Life Cycle }
+    \label{fig:Iterative and Incremental Life Cycle }
+\end{figure}
+\\\\\\\
+\newpage
+\subsubsection{Project Plan}
+Once we checked the feasibility of the project, I started planning the project. The table below describes how we plan our project.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{Capture.PNG}
+    \caption{Project Plan  }
+    \label{fig:Project Plan  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsubsection{Schedule Representation}
+Project task planning is an important project planning activity. It's about deciding which tasks to do when. To plan the project activities, the software project manager must follow these rules.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{ah.PNG}
+    \caption{Grantt Chart }
+    \label{fig:Grant Chart  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsection{Risk Management }
+Software risk management is a proactive approach to minimizing the uncertainties and potential losses associated with projects. Some risk categories include product size, business impact, customers, processes, technology, development environment, staffing (size and experience), schedule, and cost. Risk management is the practice that includes processes, methods, and tools for managing project risk.\\\\
+Risk identification is a systematic attempt to identify threats to project plans. By identifying known and foreseeable risks, you can take the first steps towards avoiding them if possible and controlling them if necessary. For the purposes of risk identification, we grouped risks into various categories as follows:\\\\
+\\
+1. Project risk\\
+2. Technical risk\\
+3. Business risk\\
+4. Known risks\\
+5. predictable risk\\
+6. Unpredictable\\
+\newpage
+\section{System Analysis}
+\subsection{Background Study}
+Systems analysis is the study of a substance in parts and their implementation and detailed investigation.\\
+Before designing any system, it is important to have a clear understanding of the nature of the business and how it currently works. In-depth testing provides the specific data required during design to ensure all customer requirements are met. The investigations or studies carried out during the analysis stage are mainly based on feasibility studies. Rather, it is no exaggeration to say that the analysis and feasibility stages overlap. High-level analysis begins during the feasibility study. Although the analysis is presented as a phase of the system development lifecycle (SDLC), it is not. \\Analysis begins with system initialization and continues through maintenance. Even after a successful system implementation, analytics can play a role in regular system maintenance and updates. One of the leading causes of project failure is lack of understanding, and one of the leading causes of poor understanding of requirements is poor planning for system analysis. 
+\newpage
+\subsection{Software system attributes}
+\subsubsection{Reliability}This application is a reliable product that provides fast and verified output of all processes.
+\subsubsection{Availability}
+This application is free to use and helps you perform operations conveniently.
+\subsubsection{Security}
+This application is designed to be maintainable. New requirements can be easily incorporated into individual modules. 
+\newpage
+\subsection{Scope of working}
+The proposed software product is a hospital management system "HMS". This system is used in all hospitals, clinics, pharmacies or pathology laboratories. A clinic, pharmacy, or pathology obtains information from a patient and stores this data for future use. Our current system is a paper-based system. Too late to provide an updated patient list within a reasonable timeframe. The purpose of this system is to reduce overtime pay and increase the number of patients that can be treated accurately. The requirement statements in these documents are both working and non-working.
+
+\newpage
+\subsection{Feasibility study }
+\subsubsection{Technical Feasibility}
+It's about specifying the equipment and software that best meets your requirements. Technical requirements for systems can vary widely, but may include:\\\\
+Ability to generate output within a certain amount of time:\\
+1. Response time under conditions.\\
+2. Ability to process a specified volume of transactions at a specified time.\\
+3. A device for transmitting data over distance.\\
+\subsubsection{Operational Feasibility}
+It's about specifying the equipment and software that best meets your requirements. Technical requirements for systems can vary widely, but may include:\\\\
+Ability to generate output within a certain amount of time:\\
+1. Response time under conditions.\\
+2. Ability to process a specified volume of transactions at a specified time.\\
+3. A device for transmitting data over distance. \\
+\subsubsection{Economic Feasibility}
+Economic analysis is the most commonly used technique for evaluating the effectiveness of proposed systems. It is more commonly known as cost-benefit system as compared to cost. When the benefits outweigh the costs, the decision is made to design and implement the system. 
+\subsubsection{Management Feasibility}
+A decision on whether a proposed project is acceptable to management. If he does not accept the project or supports it only marginally. Analysts tend to view projects as unfeasible.
+\subsubsection{Social Feasibility}
+Social feasibility is a determination of whether the project will be acceptable to the people or not. This determination typically examines the probability of the project accepted by the group directly affected by the proposed system change. 
+\newpage
+\section{System Design }
+\subsection{Database Design }
+Database design is the process of creating a detailed data model of your database. This data model contains all the logical and physical design options and physical storage parameters required to generate a design in a data definition language that can be used to create databases. A fully attributed data model contains detailed attributes for each entity.\\\\
+The term database design can be used to describe different parts of the overall database system design. In principle, it can be thought of as the logical design of the underlying data structures used to store data. In relational models, these are tables and views. In an object database, entities and relationships map directly to object classes and named relationships. However, the term database design is also used to refer to the overall process of designing not only the basic data structures, but also the forms and queries used as part of the overall database application within a database management system. I can do it. 
+\newpage
+\subsection{Class Diagram of Hospital Management System}
+An entity-relationship diagram (ERD) is an abstract, conceptual representation of data. Entity-Relational Modeling is a database modeling technique used to create some kind of conceptual schema or semantic data model of a system (often a relational database) and its requirements in a top-down fashion.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{ahs.jpg}
+    \caption{Class Diagram Of HMS }
+    \label{fig:Class Diagram Of HMS  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsection{Case Diagram}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{case_diagram.PNG}
+    \caption{Case Diagram Of HMS }
+    \label{fig:Case Diagram Of HMS  }
+\end{figure}
+\\\\\\\
+
+\newpage
+\subsection{Organizational Chart}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{ahsa.jpg}
+    \caption{Organizational Chart Of HMS }
+    \label{fig:Case Diagram Of HMS  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsection{E-R Diagram}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{er.png}
+    \caption{ER Diagram Of Doctor }
+    \label{fig:ER Diagram Of Doctor  }
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{er2.png}
+    \caption{ER Diagram Of HMS }
+    \label{fig:ER Diagram Of HMS  }
+\end{figure}
+
+\newpage
+\section{Database schema of HMS}
+A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied on the data.\\\\
+A database schema can be divided broadly into two categories:\\\\
+\textbf{Physical Database Schema:}  This schema pertains to the actual storage of data and its form of storage like files, indices, etc. It defines how the data will be stored in a secondary storage. \\\\
+\textbf{Logical Database Schema:}  This schema defines all the logical constraints that need to be applied on the data stored. It defines tables, views, and integrity constraints. \\\\
+List of table: \\\\
+1.	admin \\
+2.	Users \\
+3.	Patients\\ 
+4.	Physician \\ 
+5.	Services \\
+6.	Transactions\\ 
+7.	user_details \\
+8.	Room \\
+9.	Discounts \\
+10.	Appointment \\
+11.	Doctors \\
+12.	Doctor specialization.\\
+
+\subsection{Data Flow Diagram }
+The context diagram is the most abstract data flow representation of a system. It represents the entire system as a single bubble and. The various external entities with which the system interacts .\\
+and the data flows occurring between the system and the external entities are also represented. The name context diagram is well justified because it represents the context in which the system is to exist i.e. the external entities (users) that would interact with the system and specific data items they would be receiving from the system. 
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{data_model.png}
+    \caption{Data Model Of HMS }
+    \label{fig:Data Model Diagram Of HMS  }
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{main.png}
+    \caption{Data Model Of HMS }
+    \label{fig:Data Model Diagram Of HMS  }
+\end{figure}
+\subsection{Application Architecture}
+Deployment Diagram for Hospital Management System is:
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{dep.jpg}
+    \caption{Deployment Diagram Of HMS }
+    \label{fig:Deployment Diagram Of HMS  }
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{appp.PNG}
+    \caption{Application Architecture Of HMS }
+    \label{fig:Application Architecture Of HMS  }
+\end{figure}
+\section{System Implementation}
+\subsection{Implementation}
+Implementation is the process of personally checking the system to operate new devices, training users to install new applications, and creating all files containing the data required for their use. In implementation he has three types. An implementation to replace a manual system with a computer system. Issues encountered include covering files, training users, creating accurate files, and checking print integrity. Implementation of a new computer system to replace an existing computer system. This is usually a difficult conversion. Without proper planning, many problems can arise.\\ Many large computer systems can take up to a year to convert. A modified application implementation that replaces an existing application on the same computer. This type of conversation is relatively easy to work with and typically doesn't involve major changes to files. Our project has not yet been implemented.
+
+\subsection{Implementation Environment}
+The implementation view of software requirement presents the real world manifestation of processing functions and information structures. This computerized system is specified in a manner that dictates accommodation of certain implementation details. 
+The implementation environment of the developed system facilitates multiple users to use this system simultaneously.\\ The user interfaces are designed keeping in mind that the users of this system are familiar to using web-based systems. Thus, we restricted ourselves to developing a web-based system so that it becomes easier for the end user to get acquainted to the developed system.
+
+\subsection{Functional Requirement}
+This system interface is divided into two section\\\\ 
+1.	Administrator interface.  \\
+2.	Users interface. \\
+\subsubsection{Administrator Interface}
+1. Admins can delete posts.\\
+2. Admins can check user accounts.  
+\subsubsection{User Interface}
+1. Users can view all ads without an account.\\
+2. You must create an account to post ads.\\
+3. Users can update/edit their account. \\4. Log in and out of the system.\\
+5. To create a new account, the user must confirm the email address with a verification code.\\
+6. If a user forgets their password, they can recover their account by verifying their email address and creating a new password.
+\newpage
+\section{Conclusion}
+This project has been a rewarding experience in many ways. Work throughout the project has enlightened us in the following areas:\\\\
+a) Gained insight into how HOSPITAL works. This represents a typical real-life situation.\\
+b) I gained a better understanding of the design of the database, as it is necessary to strictly follow the design of the database in order to produce the final report.\\ c) Planning a project and sticking to its schedule creates a strong sense of time management.\\
+d) Developed a sense of teamwork and greatly increased confidence in handling real projects.\\
+e) Initially there were problems with validation, but after discussion it should be implemented.\\
+\subsection{Future plan}
+o	Diagnostics billing system.  
+\subsection{Limitations of the system}
+o Online payment is not available in this version.\\ o Systems for deleting and editing data are not available in all sections.\\ o User accounts are not validated by mobile SMS and are not available in this system.\\ o Loss of data due to improper management.
+\newpage
+\section{References}
+	Deepak Thomas ͞”Beginning PHP 4 Databases”, Wrox Press Ltd. Paperback-17, October, 
+2002.70-130 pp. \\\\
+[2]	Matt Doyle, “Beginning PHP 5.3, 2ndedition”, October 2009. 150-270 pp.  \\\\
+[3]	Luke Welling, Laura Thomson. Sams ͞PHP and MySQL Web Development, 2nd edition, 
+Paperback- 20 February, 2003. 105-209 pp. \\\\
+[4]	W. Jason Gilmore “Beginning PHP 5 and MySQL 5 from Novice to Professional SECOND 
+EDITION”, Jul 9, 2008.100-150 pp. \\\\
+[5]	Abraham Silberschatz, Henry F. Korth and S. Sudarshan “Sixth Edition Database System 
+Conceptsreleased”, January 28, 2010. 206-253 pp.\\\\
+[6]	Server-Side Scriptinghttp://php.net/manual/en/index.php, Last accessed on 12/15/2017at 
+2:33pm \\\\
+[7]	HTML &CSS https://www.w3schools.com/, Last accessed on 10/21/2017at 1:33pm. \\\\
+[8]	Bootstraphttp://getbootstrap.com/, last accessed on 09/30/2017at 10:10pm. \\\\
+[9]	https://stackoverflow.com/, last accessed on 11/07/2017 at 2:20am. \\\\
+
+
+\end{document}

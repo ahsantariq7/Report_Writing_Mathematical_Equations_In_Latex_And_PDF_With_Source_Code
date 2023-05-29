@@ -1,0 +1,425 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{tgpagella, newpxmath} % A successor to mathpazo
+\usepackage{yfonts} % For gothic
+
+\DeclareTextFontCommand{\textgoth}{\gothfamily}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\bfseries\Large\gothfamily The Islamia University Of Bahawalpur}\\ \hfill \break
+    {\Large\bfseries\scshape Department of Computer Science}\\\\
+    \begin{figure}[htp]
+    \centering
+    \includegraphics[width=4cm]{iub.PNG}
+    \label{fig:iub}
+\end{figure}
+    {\bfseries\Large SOFTWARE REQUIREMENTS SPECIFICATION}\\\hfill \break
+    \textbf{(SRS DOCUMENT)}\\\hfill \break
+    
+    {\bfseries\Large For}\\ \hfill \break
+    {\Large\bfseries\scshape Banking Management System}\\ \hfill \break
+    \textbf{Version 1.0}\\ \hfill \break
+    {\bfseries\Large By}\\ \hfill \break
+    {\bfseries\Large Rahila Atta}\\ \hfill \break
+    {\bfseries\Large F21BDOCS1M08125}\\ \hfill \break
+    {\bfseries Session Spring/Fall 2019 – 2023}\\ \hfill \break
+    {\bfseries\Large Supervisor}\\ \hfill \break
+    {\bfseries\Large Sir Omer ajmal}\\ \hfill \break
+    {\Large\bfseries\scshape Bachelor of Science in Computer Science }\\
+  
+  \end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\\
+\textbf{Revision History}\\ \hfill \break
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\raggedright\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X |}
+ \hline
+ Name & Date & Reason for changes & Version \\
+ \hline
+   &   &   &   &  \\
+\hline
+  &   &   &   &  \\
+\hline
+\end{tabularx}
+\newpage
+\textbf{Application Evaluation History}\\ \hfill \break
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\raggedright\arraybackslash}X  
+  | >{\raggedleft\arraybackslash}X |}
+ \hline
+ Comments (by committee)
+*include the ones given at scope time both in doc and presentation
+ & Action Taken  \\
+ \hline
+   &   &    \\
+\hline
+  &   &     \\
+\hline
+\end{tabularx}
+\\ \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break \hfill \break
+\\
+{\bfseries\Large Supervised By:}\\ \hfill \break
+    {\bfseries\Large Sir Omer ajmal}\\ \hfill \break \hfill \break \hfill \break \hfill \break
+    {Signature:\underline ..........................}
+    
+\newpage
+\section{Introduction}
+The Bank Management System project is an example of an Internet banking site. The website allows customers to sit in their office or home and perform basic banking transactions via their PC or laptop. The system provides access for customers to create accounts, deposit/withdraw cash from accounts, and view reports for all existing accounts. Customers can visit their website at the bank to view account details and perform account transactions as needed. Internet banking transforms the fixed structure of traditional banking into a click-and-portal model, which really forms the concept of virtual banking. Banking today is no longer limited to branches. E-banking allows customers around the world to easily access his banking 24 hours a day.\\\\ The main goal of this "bank account management system" is to provide an improved design methodology that allows for future extensions and changes necessary for core sectors like banking. This requires the design to be extensible and changeable, so a modular approach is used to develop the application software. Anyone who has an account with this bank can become a member of the bank account management system. He has to fill out a form with his personal information and account number. Banks are places where customers can safely deposit their assets. In banks, customers deposit and withdraw money. Money transactions are also the part that customers seek protection from their banks. \\\\In order to maintain the trust and confidence of our customers, we need bank management that allows us to entrust all of these things with peace of mind. Smooth and efficient operations indirectly affect customer and employee satisfaction. And, of course, encourage the Management Committee to make the necessary decisions for the future improvement of the Bank. Today, managing a bank up to a certain limit is a tedious task. Therefore, software that reduces effort is essential. Today's world is also a real computer world, and it's getting faster every day. Therefore, considering the needs above, there is a need for bank management software that can help you manage your bank more efficiently. All transactions are performed online by transferring money from the same bank or international bank accounts. This web based application aims to overcome the shortcomings of manual systems.\\\\the software was developed using the most powerful and secure backend MYSQL database and the most widely used web-oriented and application-oriented development.
+\newpage
+\subsection{Proposed System}
+1.	Employee Details: The new proposed system stores and maintains all the employees’ details.
+\\\\
+2.	Registers: There is no need of keeping and maintaining records and employee register manually. It remembers each and every record and we can get any report related to employee and salary at any time.\\\\
+3.	Speed: The new proposed system is very fast and saves time.
+\\\\
+4.	Efficiency: The new proposed systems complete the work of many employees in less time.
+\\\\
+5.	Transaction details: The new proposed system contains the details of every past doctor and patients for future assistance.
+\\\\
+6.	Reduces redundancy: The most important benefit of this system is that it reduces the redundancy of data within the data.
+\\\\
+7.	Work load: Reduces the workload of the data store by helping in easy updates of the products and providing them with the necessary details together with financial transactions management.
+\\\\
+8.	Easy statements: Month-end and day-end statement easily taken out without getting headaches on browsing through the day end statements.
+\\\\
+\newpage
+\subsection{Synopsis }
+A bank account management system keeps daily records as a complete banking system. You can store information about account types, account opening forms, deposit funds, withdrawal and transaction lookups, transaction reports, individual account opening forms and group accounts. The existing parts of this project are: View trading reports, account type summary statistics, and interest information.
+\newpage
+\subsection{AIM of this project }
+The main purpose of the design and development of this PHP-based internet banking system is to provide bank customers with safe and efficient internet banking functions over the internet. Apache Server Pages (MYSQL database) were used to develop this banking application that allows all bank customers to log in via a secured web page using their account login ID and password. Users can enjoy all the options and features of this application. B. You can receive money from Western Union, send money to others, or send cash or money to inter-bank or other bank customers by simply adding them as a payee
+\newpage
+\subsection{Getting Started}
+Choose Online Banking if you want to try online banking without obligation. You don't need to register at all, so it's a good way to try before you register. Once registered, you can choose to do basic banking and check balances, or more complex transactions like paying bills or making wire transfers. It's up to you. It really depends on how you like banking. You will receive a confirmation number after each transaction and you can always check your session summary to see what you have done. If you make a mistake, customer service is always ready to help.
+\newpage
+\subsection{Main Purpose }
+The traditional way for banks to manage user details was to enter and record the details. Every time the user needs to make a transaction, he has to go to the bank and perform the required action, which is not always possible. It can also be a daunting task for users and bankers alike. This project provides a real-world understanding of an online banking system and the activities performed by various roles in the supply chain. Here we offer automation of banking systems via the Internet.\\ The online banking system project captures the activities performed by different roles in real-world banking, providing improved techniques for keeping the required information up to date and increasing efficiency. This project provides a real-world understanding of an online banking system and the activities performed by various roles in the supply chain.
+\newpage
+\subsection{What to expect}
+Here are some of the features available in Online Banking:
+\textbf{1. View your balance:}\\
+First, log into your account using your account number and password. After that, checking your balance is less of a hassle. Simply select Account Balance to see your account balance and past transactions. If you have multiple accounts, you can also transfer between accounts.
+\\\\
+\textbf{2. Send money:}\\
+After choosing Send money, you will be asked where, when and how much you want to send.\\\\
+\textbf{3. Set up recurring bill payments or transfers:}\\
+If you make recurring monthly payments, it's helpful to set up automatic charges to your account.\\\\
+\textbf{4. Monitor CIBC Investments:}\\
+If you have CIBC investments, you can monitor these stocks or mutual funds here. \\\\
+\textbf{5. Pay your bill:}\\
+To pay your bill online, simply add the name of the company you want to pay your bill to your account.\\\\
+\textbf{6. Check your VISA* account:}\\
+Great place to monitor your spending. Credit card payments can be made online directly from your account.\\\\
+\textbf{7. Ordering Checks:}\\
+Online Banking and Direct Debit no longer requires, but if you use checks, you can order directly on his website at BMS.\\\\
+\newpage
+\subsection{Take control}
+Online banking allows you to be more like a banker and run your accounts like a small business that you manage every day. Once you start, it becomes addicting. You will find yourself checking your bank account as often as you check your email.
+\subsection{Features of BMS}
+..User registration for Online Banking, if not registered.\\\\ .. Add recipient accounts for each customer.\\\\  Transfer of money to a local customer account number. \\\\ An administrator must approve the activation of a user using her account before sending money and viewing the statement history.\\\\  At each registration, customers will be notified of the date and time of their last registration. \\\\ Customers can see all transactions made on their account.\\\\  Customers can check their bank statements within a date range.\\\\  Customers can request ATMs and checkbooks.\\\\  Administrators can add/edit/delete customer accounts. \\\\ Both people (customer and administrator) can change passwords.\\\\  The administrator's login page is hidden from customers for security reasons.\\\\  Passwords are stored as encrypted hashes with an additional random salt for added security.
+\newpage
+\subsection{Goals and Objectives}
+\subsubsection{Main Goals}
+Our motto is to manage the entire banking process related to manager and client accounts and to develop software programs that allow everyone to efficiently manage their assets and various trading processes.\\\\ o Our main goal is customer satisfaction in today's rapidly changing world.
+\subsubsection{Customer Satisfaction}
+Customers can easily complete operations without risk or loss of privacy. \\\\ o Our software takes over and performs all the tasks that every customer wants.
+\subsubsection{Saving Customer Time}
+Customers do not need to go to the bank to perform small operations.
+\subsubsection{Protecting The Customer}
+It helps customers feel happy and comfortable with their choices. This protection includes customer accounts, money, and privacy.
+\subsubsection{Transferring Money}
+It helps customers feel happy and comfortable with their choices. This protection includes customer accounts, money, and privacy.
+\newpage
+\section{Modules and Requirements }
+\subsection{Modules Description}
+Description of the modules of the bank account management system project. These modules are developed with PHP source code and MYSQL database.
+
+\subsubsection{Create New Account}
+Customers with worldwide accounts can use this module to create virtual accounts. This module retrieves customer profile details and bank account details that prove ownership of a bank account.
+\subsubsection{Login}
+Virtual account holders can use this module to login to the system. So this is a secure login page for your website's customers.
+\newpage
+\subsubsection{Project Management Life Cycle}
+The project management life cycle consists of four phases. Describes each phase of the project lifecycle and the tasks required to complete it.\\\\
+The four phases is : 
+\\\\
+1. Introduction\\
+2. Make a plan\\
+3. Execution\\
+4. Closing. \\
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{Screenshot 2022-12-04 114133.png}
+    \caption{Iterative and Incremental Life Cycle }
+    \label{fig:Iterative and Incremental Life Cycle }
+\end{figure}
+\\\\\\\
+\newpage
+\subsubsection{Virtual Account}
+After approving the creation of a new Virtual Account, Client will assign a unique Virtual Account number for conducting online financial transactions. This module displays the virtual account details of the logged-in customer.
+\subsubsection{Bank Accounts}
+A customer may have multiple bank accounts with different banks. If so, the customer will be asked to decide which bank account should be reflected in the debit or credit amount of the account. For these operations, customers can add their bank accounts here and are approved by the system administrator.
+\subsubsection{Fund Transfer}
+A customer may have multiple bank accounts with different banks. If so, the customer will be asked to decide which bank account should be reflected in the debit or credit amount of the account. For these operations, customers can add their bank accounts here and are approved by the system administrator.
+\subsubsection{Beneficiary}
+A beneficiary is someone who receives money. Here, customers can add recipients for future transfers.
+\subsubsection{Transactions}
+This module displays transactions made by a customer on a specific date along with transaction details.
+\subsubsection{Administrative Control}
+This module contains the administrative functions such as view  all  virtual  account,  transactions,  approve  bank  accounts,  approve  virtual accounts etc. \hfill \break \hfill \break \hfill \break
+There are other features and actions that can be performed on a back account but we are not going to  look  at  bank  accounts in  their  entirety only the  basics, this  way we  avoid  over complicating the exercise. The purpose of this whole exercise is to show the usefulness of object  oriented  programming  as  opposed  to  really  wanting  to  create  a  banking  system.\\\\
+Translating the above points into software is easy when you think of a bank account as an object:
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{or.PNG}
+    \caption{Bank Account System }
+    \label{fig:Bank Account System }
+\end{figure}
+\\\\\\\
+Just by looking at the image above, you can see the required methods in the class.
+\subsection{Methods}
+-> Must be able to generate an account number.\\\\ -> Account type:
+Savings or checking account  Maintain/update balance\\\\ -> Open/close account \\\\-> Withdraw/deposit
+\\ \hfill \break
+Next, you'll need to confirm where you store information about your account. Obviously, the best place to store bank account information is a database. To work with the database (from an OOP perspective) you need the following methods:
+-> Connect to databases \\\\ -> Insert account details \\\\ -> Update account balances when making withdrawals or deposits.
+\\\\
+This class is called Accounts and has a constructor method of the same name that helps initialize some variables.
+\subsection{Administrative Modules}
+Now in my project I have two types of modules. This module is the main module that performs all major operations in the system. The main operations of the system are:
+\subsubsection{Admin Module }
+Admins can access this project. We have an approval process. If you are logged in as an administrator, you will see your administrator home page, and if you are a basic user you will see your account home page. This will perform the following functions:
+Create individual accounts, manage existing accounts, view all transactions, balance inquiries, delete/close accounts, etc.
+-> Admin login\\ -> Add/delete/update accounts\\ -> Withdrawal/Deposit/Statement transactions\\ -> Accounts Information\\ -> User Details List\\ -> Active/Inactive Accounts\\ -> View Transaction History
+\subsubsection{User Module }
+A simple user can access his account and deposit/withdraw funds from his account. Users can also transfer money from their account to another bank account. Users can also view transaction reports and balance inquiries.
+\\-> User login, use PIN system \\-> Create/start new account registration \\-> Transfer money (local/international/domestic)\\ -> View bank statement\\ -> User account details\\ -> Change password and his PIN.\\ ->View developer details
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{sd.PNG}
+    \caption{Module of project }
+    \label{fig:Module of project }
+\end{figure}
+\newpage
+\subsubsection{Schedule Representation}
+Project task planning is an important project planning activity. It's about deciding which tasks to do when. To plan the project activities, the software project manager must follow these rules.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{ah.PNG}
+    \caption{Grantt Chart }
+    \label{fig:Grant Chart  }
+\end{figure}
+\\\\\\\
+\subsection{Hardware Requirements Specification}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{sav.PNG}
+    \caption{Hardware Requirements Specification }
+\end{figure}
+\subsection{Software Requirements Specification}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{ha.PNG}
+    \caption{Software Requirements Specification  }
+    \label{fig:Software Requirements Specification   }
+\end{figure}
+\newpage
+\subsection{Risk Management }
+Software risk management is a proactive approach to minimizing the uncertainties and potential losses associated with projects. Some risk categories include product size, business impact, customers, processes, technology, development environment, staffing (size and experience), schedule, and cost. Risk management is the practice that includes processes, methods, and tools for managing project risk.\\\\
+Risk identification is a systematic attempt to identify threats to project plans. By identifying known and foreseeable risks, you can take the first steps towards avoiding them if possible and controlling them if necessary. For the purposes of risk identification, we grouped risks into various categories as follows:\\\\
+\\
+1. Project risk\\
+2. Technical risk\\
+3. Business risk\\
+4. Known risks\\
+5. predictable risk\\
+6. Unpredictable\\
+\newpage
+\section{System & Database Design }
+\subsection{System design}
+Design is the first step in the development stage of any technical product or system. Design is a creative process. Good design is the key to an effective system. The term 'design' is defined as 'the process of applying various techniques and principles with the aim of defining a process or system in sufficient detail to enable its physical realization'. It can be defined as the process of employing various techniques and principles to define a device, process, or system in sufficient detail to enable its physical realization. Software design forms the technical core of the software development process and is applicable regardless of the development paradigm used. System design develops the architectural details required to build a system or product. \\Like any systematic approach, this software has also gone through the best possible design phases and has been fine-tuned for efficiency, performance, and accuracy at all levels. The design phase is the transition from user-oriented documentation to documentation for programmers or database staff. System design he goes through two phases of development.
+\\-> Logical design and\\ -> Physical design.
+
+\subsection{Logical Design}
+Define the logical flow of the system and the boundaries of the system. It includes the following steps:
+\\-> Review current physical system - data flow, file content, volume, frequency, etc. \\-> Create an output specification - i.e. decide the format, content and frequency of the report.\\ -> Input Specifications - Prepare format, content and most input features.\\ -> Create process, safety and control specifications. -> Define an implementation plan. \\-> Prepare a logical design path for information flow, outputs, inputs, controls, and implementation plans.\\ -> Review benefits, costs, target dates and system limitations.
+\subsection{Physical Design}
+Physical systems create working systems by defining design specifications that tell programmers exactly what candidate systems must do. It includes the following steps:\\ -> Design the physical system.\\ -> Define your input and output media.\\ -> Design the database and establish backup procedures. \\-> Design the physical information flow and physical design paths through the system.\\ -> Plan the implementation of the system.\\ -> Prepare a migration plan and target date.\\ -> Establish training procedures, courses and schedules.\\ -> Create test and implementation plans and specify new hardware/software. \\-> Updated benefits, costs, migration dates and system limits.
+\subsection{Database design }
+A database named Bank has two tables, one named Accounts and one named Customer. Each contains information about an account or customer. The two tables are linked through a foreign key. The customer table has the following fields:
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{t1.PNG}
+    \caption{Account User Table-3.1  }
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{t2.PNG}
+    \caption{Accounts Table-3.2}
+\end{figure}
+\\
+A customer can have many accounts, so I thought it appropriate to add a foreign key acc-id to the customer table. Also, instead of using fields such as creation date and closing date, use the active field to check if the account is active. This allows you to focus on programming rather than database details.
+\subsection{Data flow diagram }
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{d1.PNG}
+    \caption{Create new account DFD}
+\end{figure}
+\\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{d2.PNG}
+    \caption{Withdraw/deposit account DFD}
+\end{figure}
+\\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{d3.PNG}
+    \caption{Deleting an account DFD}
+\end{figure}
+
+\newpage
+
+
+\newpage
+\section{Terms of service & Security }
+\subsection{General information}
+You must be registered with BMS Bank at the branch where you have your account. \\ \hfill \break2. If you have accounts in multiple branches, you must register separately for each branch.\\ \hfill \break 3. Generally, BMS Bank services can only be accessed after the client confirms receipt of the password.\\ \hfill \break 4. We encourage you to visit your account on the Website frequently to make transactions and check your account balance. If you believe there is a discrepancy in your account information, please notify the branch by email or letter.\\ \hfill \break 5. In the case of joint accounts, all account holders are eligible to register as users of her BMS bank, but transactions are permitted based on registered account retention rights at the branch. (Initially, the service will only extend to single or shared “E or S” accounts).\\ \hfill \break 6. All branch accounts are available at BMS Bank whether or not they are listed on the registration form. However, applicants have the option to selectively display BMS Bank accounts.
+\subsection{Security terms}
+1. The branch where the customer holds the account allocates:
+\hfill \break a) User Account Number \hfill \break  b) Password
+\\ \hfill \break 2. The branch-provided user ID and password must be replaced with a customer-selected username and password upon initial login. This is required.\\ \hfill \break 3. We make reasonable use of available technology to ensure security and prevent unauthorized access to these services. BMS Bank services are Verisign certified to ensure a secure site. This means: \\-> We are dealing with RRs at the moment. \\-> Two-way communication is protected with 128-bit SSL encryption technology to ensure confidentiality of data in transit. Four. Access BMS Bank anytime, anywhere. However, as a precautionary measure, customers can avoid using public access PCs.
+\\ \hfill \break 5. There is no way to retrieve the password from the system. Therefore, if you forget your password, you must contact your branch to re-register.
+
+\subsection{Banks terms}
+1. All requests received from customers are logged for backend fulfillment and are effective from the moment they are recorded in the store.\\ \hfill \break 2. The rules and regulations applicable to normal banking transactions in India apply mutatis mutandis to transactions made through this website.\\ \hfill \break 3. BMS Bank services are not available for claims. Banks can also convert this to a discretionary service at any time.\\ \hfill \break 4. Any dispute between the Client and the Bank relating to the Service shall be subject to the jurisdiction of the Courts of the Republic of India and shall be governed by the laws in force in India.\\ \hfill \break 5. The Bank reserves the right to change the services offered or the terms and conditions of BMS Bank. Any changes will be notified to you through a notice on the Website. 
+\subsection{Customer’s obligations }
+1. You are obligated to keep your username and password registered with us confidential. The bank considers a login with a valid username and password to be a valid session initiated by none other than the customer.\\ \hfill \break 2. Any transaction conducted through a valid session will be interpreted by RR as originating from and binding on the registered customer.\\ \hfill \break 3. You shall not attempt or permit unauthorized access to BMS Bank.
+\subsection{Dos & Don’ts}
+1. User IDs and passwords must be strictly managed and not disclosed to others. Any losses suffered by Client as a result of failure to comply with this condition are at Client's own risk and liability and Bank will have no liability for them.\\ \hfill \break 2. You can choose your password. As a precaution, we recommend that you do not use common passwords or guessable or identifiable personal data such as your name, address, phone number, driver's license, date of birth, etc. Similarly, it's a good idea to remember your password rather than writing it down somewhere.\\ \hfill \break 3. It may not be safe to leave your computer unattended during an active session. This may allow other users to access your account information.
+\subsection{Safe Online Banking Tips}
+-> The URL address in your Internet browser's address bar begins with "https". The letters at the end of "https" mean "secure".\\ \hfill \break -> Look for a padlock icon in the address bar or status bar (usually the address bar), not in the display area of the web page. Click the padlock to see the security certificate.\\ \hfill \break -> Do not enter login information or other sensitive information in pop-up windows.\\ \hfill \break -> The address bar turns green, indicating that the website is secured with an SSL certificate.
+\subsection{Beware of Phishing Attacks }
+-> Phishing is a fraudulent activity, usually done via email, phone, SMS, etc. to obtain personal or confidential information.\\ \hfill \break -> State Bank or its representatives will never email or text him or make phone calls to obtain personal information, passwords, or one-time SMS (advanced security) passwords There is none.\\ \hfill \break -> Any such email/SMS or phone call constitutes an attempt to fraudulently withdraw funds from your internet banking account. Never respond to such emails/SMS or calls.\\ \hfill \break -> Change your Internet banking password regularly.\\ \hfill \break -> Be sure to check the last login date and time on the page after login.
+\newpage
+\section{System Design }
+\subsection{Database Design }
+Database design is the process of creating a detailed data model of your database. This data model contains all the logical and physical design options and physical storage parameters required to generate a design in a data definition language that can be used to create databases. A fully attributed data model contains detailed attributes for each entity.\\\\
+The term database design can be used to describe different parts of the overall database system design. In principle, it can be thought of as the logical design of the underlying data structures used to store data. In relational models, these are tables and views. In an object database, entities and relationships map directly to object classes and named relationships. However, the term database design is also used to refer to the overall process of designing not only the basic data structures, but also the forms and queries used as part of the overall database application within a database management system. I can do it. 
+\newpage
+\subsection{Class Diagram of Bank Management System}
+An entity-relationship diagram (ERD) is an abstract, conceptual representation of data. Entity-Relational Modeling is a database modeling technique used to create some kind of conceptual schema or semantic data model of a system (often a relational database) and its requirements in a top-down fashion.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{w1.jpg}
+    \caption{Class Diagram Of BMS }
+    \label{fig:Class Diagram Of BMS  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsection{Case Diagram}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{w2.png}
+    \caption{Case Diagram Of BMS }
+    \label{fig:Case Diagram Of BMS  }
+\end{figure}
+\\\\\\\
+
+\newpage
+\subsection{Organizational Chart}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{w3.jpg}
+    \caption{Organizational Chart Of BMS }
+    \label{fig:Case Diagram Of BMS  }
+\end{figure}
+\\\\\\\
+\newpage
+\subsection{E-R Diagram}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{w4.png}
+    \caption{ER Diagram Of BMS }
+    \label{fig:ER Diagram Of BMS  }
+\end{figure}
+
+
+\newpage
+\section{Database schema of HMS}
+A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied on the data.\\\\
+A database schema can be divided broadly into two categories:\\\\
+\textbf{Physical Database Schema:}  This schema pertains to the actual storage of data and its form of storage like files, indices, etc. It defines how the data will be stored in a secondary storage. \\\\
+\textbf{Logical Database Schema:}  This schema defines all the logical constraints that need to be applied on the data stored. It defines tables, views, and integrity constraints. \\\\
+
+
+\subsection{Data Flow Diagram }
+The context diagram is the most abstract data flow representation of a system. It represents the entire system as a single bubble and. The various external entities with which the system interacts .\\
+and the data flows occurring between the system and the external entities are also represented. The name context diagram is well justified because it represents the context in which the system is to exist i.e. the external entities (users) that would interact with the system and specific data items they would be receiving from the system. 
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{w5.png}
+    \caption{Data Model Of BMS }
+    \label{fig:Data Model Diagram Of BMS  }
+\end{figure}
+\section{System Implementation}
+\subsection{Implementation}
+Implementation is the process of personally checking the system to operate new devices, training users to install new applications, and creating all files containing the data required for their use. In implementation he has three types. An implementation to replace a manual system with a computer system. Issues encountered include covering files, training users, creating accurate files, and checking print integrity. Implementation of a new computer system to replace an existing computer system. This is usually a difficult conversion. Without proper planning, many problems can arise.\\ Many large computer systems can take up to a year to convert. A modified application implementation that replaces an existing application on the same computer. This type of conversation is relatively easy to work with and typically doesn't involve major changes to files. Our project has not yet been implemented.
+
+\subsection{Implementation Environment}
+The implementation view of software requirement presents the real world manifestation of processing functions and information structures. This computerized system is specified in a manner that dictates accommodation of certain implementation details. 
+The implementation environment of the developed system facilitates multiple users to use this system simultaneously.\\ The user interfaces are designed keeping in mind that the users of this system are familiar to using web-based systems. Thus, we restricted ourselves to developing a web-based system so that it becomes easier for the end user to get acquainted to the developed system.
+
+\subsection{Functional Requirement}
+This system interface is divided into two section\\\\ 
+1.	Administrator interface.  \\
+2.	Users interface. \\
+\subsubsection{Administrator Interface}
+1. Admins can delete posts.\\
+2. Admins can check user accounts.  
+\subsubsection{User Interface}
+1. Users can view all ads without an account.\\
+2. You must create an account to post ads.\\
+3. Users can update/edit their account. \\4. Log in and out of the system.\\
+5. To create a new account, the user must confirm the email address with a verification code.\\
+6. If a user forgets their password, they can recover their account by verifying their email address and creating a new password.
+\newpage
+\section{Conclusion}
+\subsection{Benefits of online banking}
+Many of us lead busy lives. Some of us get up before dawn and get ready so our families can get ready for the day. At the end of the day, I rush home to prepare for the next day. After a busy day, you absolutely hate waiting in line at the bank or post office. That's where online banking comes in. Many of the advantages of online banking are obvious.\\ \hfill \break
+-> No need to queue. \\ \hfill \break-> He doesn't have to plan his day around bank hours. \\ \hfill \break -> Check your account balance anytime, not just when you receive your bank statement. There are hidden benefits as well. As a young bank customer, you are learning how to handle your money and observe your spending behavior. \\ \hfill \break Online banking allows you to do daily money tracking if you want. By keeping a close eye on your funds, you will always know what is happening in your bank account. For experienced lenders, this option is much more appealing than finding yourself suddenly bankrupt! It is also helpful to watch the interest you receive on your investments and savings, as well as any additional expenses incurred. 
+\subsubsection{Most Available Benefits}
+1. Online banking with Key Bank is fast, secure, convenient and free.\\ \hfill \break 2. Quick and easy authenticated access to accounts via web application.\\ \hfill \break 3. Easily expand as your system requirements change.\\ \hfill \break 4. Global company-wide access to information.\\ \hfill \break 5. Improve data security, limit unauthorized access.\\ \hfill \break 6. Minimize disk space.
+\subsection{Future Look}
+"Banking Online System" is a large and ambitious project. I am grateful to have been able to participate in this wonderful work. As already mentioned, this project has undergone extensive research. Based on our research work, we have successfully designed and implemented an online banking system. To see what the future of online banking looks like, it's probably worth looking at today. Online banking is nothing new. When you think of online banking, you probably think of computers (desktops or laptops), 3- or 4-tier security processes, and interfaces that allow you to view the balances of various bank accounts and credit cards. Allow them to transfer money and pay their bills. And you are not wrong either. Here are the most worthy future looks:
+\\ \hfill \break -> More branches of banks, perhaps it will be international. That means there are more ATMs out there.\\ \hfill \break -> Customers develop based on their needs, so the helpdesk understands their needs and usability.\\ \hfill \break -> A/C NO. Enter your password and then use your unique PIN. Finally, the system will automatically update.
+\subsection{Conclusion}
+This project was developed to serve the needs of users in the banking sector by embedding all the tasks of transactions made in banks. Future versions of this project will be much better than the current version. Writing and depositing checks is probably the most basic way to deposit and withdraw money from your checking account, but advances in technology have added ATM and debit card transactions.\\ \hfill \break All banks have rules about how long it takes to access your deposit, how many debit card transactions you can make in a day, and how much you can withdraw from an ATM. Access to checking account balances may also be restricted by companies that freeze funds. Banks also offer internet banking services to attract customers. After interviewing bankers, we found that most Internet bank account holders are young people and businessmen. Online banking is a revolutionary tool that is rapidly becoming a necessity. It is a strategic weapon for banks to remain profitable in today's volatile and competitive market.\\ \hfill \break Second, if customers need to be properly trained by bank employees to open an account, the website should be more user-friendly from where customers can directly create and access their accounts for the first time. will be Customers can create and access their own accounts directly. In this way, the bank management system was successfully developed and implemented.
+\newpage
+
+\section{References}
+1.  Fundamentals of database systems by (Elmasri Navathe, 2000), Website:https://archive.org/stream/FundamentalsOfDatabaseSystemselmasrinavathe#page/n51/mode/2up, Page: From 52 to more. 1.  Article: Online banking, Website: https://en.wikipedia.org/wiki/Online_banking June 29, 2015, 12.30 am.\\ \hfill \break 2.  Online Bank Account Management System Website: http://www.slideshare.net (Collect some info for report documents, 2014-2015)\\ \hfill \break 3.  Learning MYSQL, JavaScript, jQuery, PHP, HTML, CSS3,   Website: http://www.w3schools.comm, 2014-2015\\ \hfill \break 4.  PHP and MySQL video tutorials, Oct 2014-2015 Website: http://www.freebanglatutorial.com, http://www.youtube.com\\ \hfill \break  5.  Veneeva, V. (2006), “E-Banking (Online Banking) and Its Role in Today's Society”, Ezine articles, June 30, 2015\\ \hfill \break 6.  JavaScript validation for empty input field, (May 10, 2015) Website:http://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field , \\ \hfill \break 7.  JavaScript form validation: Validate Password, Validate Email, Validate Phone Number, http://webcheatsheet.com/javascript/form_validation.php, (May 10, 2015)
+
+\end{document}
